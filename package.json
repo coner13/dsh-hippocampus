@@ -1,0 +1,35 @@
+{
+  "name": "dsh-hippocampus",
+  "version": "0.2.40-r8",
+  "private": true,
+  "type": "module",
+  "description": "海马体 · 让 DSH 里的会话拥有接近人的记忆：自动记、按线索想、会变淡、不靠自觉",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "author": "coner13",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "cli.mjs",
+    "preflight.mjs",
+    "selftest.mjs",
+    "smoke.mjs",
+    "lib/*.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
